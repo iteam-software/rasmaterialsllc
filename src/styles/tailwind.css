@@ -1,0 +1,53 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@media screen and (prefers-reduced-motion: no-preference) { 
+
+  @keyframes wiggle {
+    0% {
+      transform: translateX(0px) rotate(0deg);
+    }
+  
+    20% {
+      transform: translateX(-2px) rotate(-2deg);
+    }
+  
+    40% {
+      transform: translateX(-1px) rotate(-1deg);
+    }
+  
+    60% {
+      transform: translateX(2px) rotate(2deg);
+    }
+  
+    80% {
+      transform: translateX(1px) rotate(1deg);
+    }
+  
+    100% {
+      transform: translateX(0px) rotate(0deg);
+    }
+  }
+}
+@keyframes slide-right {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bg-submit {
+  background-color: #ffc450;
+}

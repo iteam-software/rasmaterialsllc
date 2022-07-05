@@ -1,0 +1,77 @@
+backend:
+  name: git-gateway
+  repo: iteam-consulting/razzmatazz
+  branch: main
+media_folder: static/assets
+public_folder: /assets
+
+collections:
+
+  - name: splash
+    label: Splash
+    folder: splash
+    create: true
+    identifier_field: splash_tagline
+    fields: 
+    - { name: splash_tagline, label: Splash Tagline}
+    - { name: splash_body, label: Splash Body}
+    - { name: splash_advantages, label: Splash Advantage, widget: "list", field: {label: Advantage, name: advantage,}}
+    - { name: splash_photo, label: Splash Photo, widget: image}
+    - { name: splash_photo_alt, label: Photo Alternate Text }
+
+
+
+  - name: vendors
+    label: Vendors
+    folder: vendors
+    create: true
+    identifier_field: name
+    fields: 
+    - { name: name, label: Vendor Name }
+    - { name: website, label: Vendor Website }
+    - { name: photo, label: Vendor Photo, widget: image }
+    - { name: photo_alt, label: Photo Alternate Text }
+
+
+  - name: products
+    label: Products
+    folder: products
+    create: true
+    identifier_field: title
+    fields: 
+    - { name: title, label: Product Title }
+    - { name: description, label: Product Description }
+    - { name: photo, label: Product Photo, widget: image }
+    - { name: photo_alt, label: Photo Alternate Text }
+    
+  - name: contact
+    label: Contact Information
+    folder: contact
+    create: true
+    identifier_field: address
+    fields: 
+    - { name: address, label: Address }
+    - { name: email, label: Email }
+    - { name: phone, label: Phone }
+    - { name: contact_blurb, label: Contact Blurb }
+    - { name: contact_callout, label: Contact Callout }
+    
+  - name: about
+    label: About
+    folder: about
+    create: true
+    identifier_field: about_title
+    fields: 
+    - { name: about_title, label: About Title }
+    - { name: about_body, label: About Body }
+    - { name: about_photo, label: About Photo, widget: image }
+    - { name: about_photo_alt, label: Photo Alternate Text }
+
+  - name: affiliates
+    label: Affiliates
+    folder: affiliates
+    create: true
+    identifier_field: affiliate_name
+    fields: 
+    - { name: affiliate_name, label: Affiliate Name }
+    - { name: affiliate_logo, label: Affiliate Logo, widget: image }
