@@ -1,7 +1,6 @@
 backend:
   name: git-gateway
-  repo: iteam-consulting/razzmatazz
-  branch: main
+  repo: iteam-software/rasmaterialsllc
 media_folder: static/assets
 public_folder: /assets
 
